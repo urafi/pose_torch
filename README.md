@@ -43,4 +43,4 @@ To evaluate the pre-trained model for lsp. For mpi and flic simply replace 'lsp'
 
 ## Questions?
 
-Any questions or comments are welomed at rafi@vision.rwth-aachen.de
+Any questions or comments are welcomed at rafi@vision.rwth-aachen.de
