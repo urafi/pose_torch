@@ -1,9 +1,11 @@
 #  pose_torch
 This repository contains the code for the Human Pose Estimation framework described in the paper [An Efficient Convolutional Network for Human Pose Estimation](http://pages.iai.uni-bonn.de/gall_juergen/download/jgall_posecnn_bmvc16).
 
-## Getting Started
+## Requirements
 
 This code requires Torch 7 and cudnn to run. Please make sure both of them are installed on the system.
+
+## Training 
 
 Download the MPI dataset and place the images folder in  folder ../Images/MPI/ so that the path to images is ../Images/MPI/images/
 
@@ -20,9 +22,9 @@ Replace 'mpi' with 'flic' or 'lsp' for training on lsp or flic datasets.
 
 The do_all.lua scripts runs the following scripts required for training and validation.
 
-1) data.lua to load train and test/validation data for a dataset.
+1) data.lua  to load train and test/validation data for a dataset.
 2) model.lua to load the model.
-3) loss.lua to load the BCE loss.
+3) loss.lua  to load the BCE loss.
 4) train.lua contains the train() function that runs one epoch over the entire train set.
 5) test.lua  contains the test() function that runs one epoch over the entire test/validation set.
  
@@ -30,7 +32,9 @@ The do_all.lua script than calls train() and test() functions total_epoch times(
 
 As the training progresses the code saves the best scoring model  and the accuracy per epoch in the progress folder.
 
-We also provide a script run_model.lua to evaluate the pre-trained models. Download the compressed pre-trained models folder and decompress it. Then execute :
+## Evaluation
+
+We provide a script run_model.lua to evaluate the pre-trained models. Download the compressed pre-trained models folder and decompress it. Then execute :
 
 th run_model.lua -dataset 'lsp'
 
