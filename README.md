@@ -40,3 +40,7 @@ To evaluate the pre-trained model for lsp. For mpi and flic simply replace 'lsp'
 
 1. In the paper, the training time reported was with an older version of cuDNN, and after switching to cuDNN 4, training time may improve.
 2. For convenience during training , the code shows PCK and PCKh for all joints. However there might be discrepency between numbers when officially evaluated on FLIC, MPII or LSP, but  still it provides a good picture of how well the network is learning during training.
+
+## Questions?
+
+Any questions or comments are welomed at rafi@vision.rwth-aachen.de
